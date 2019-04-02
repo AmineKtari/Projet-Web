@@ -1,39 +1,33 @@
 function validateForm() {
-  var x = document.forms["form"]["cin"].value;
+  var x = document.forms["form"]["num"].value;
   if (x == "") {
-    alert("Reference must be filled out");
-    return false;
-  }
-  var y = document.forms["form"]["nom"].value;
-  if (y == "") {
-    alert("First Name must be filled out");
-    return false;
-  }
-  var z = document.forms["form"]["prenom"].value;
-  if (z == "") {
-    alert("Last Name must be filled out");
-    return false;
-  }
-  
-  var v = document.forms["form"]["mail"].value;
-  if (v == "") {
-    alert("Mail must be filled out");
-    return false;
-  }
-  var u = document.forms["form"]["adresse"].value;
-  if (u == "") {
-    alert("Adress must be filled out");
-    return false;
-  }
-  var m = document.forms["form"]["num"].value;
-  if (m == "") {
     alert("Number must be filled out");
     return false;
-  }
-  
-  var n = document.forms["form"]["mot_dp"].value;
-  if (n == "") {
-    alert("Password must be filled out");
+	}
+    var y = document.forms["form"]["nom"].value;
+  if (y == "") {
+    alert("First Name must be filled out");
+    return false;}
+    var z = document.forms["form"]["prenom"].value;
+  if (z == "") {
+    alert("Last Name must be filled out");
+    return false;}
+    var w = document.forms["form"]["adress"].value;
+  if (w == "") {
+    alert("Adress must be filled out");
+    return false;}
+    var v = document.forms["form"]["date"].value;
+  if (v == "") {
+    alert("Date must be filled out");
+    return false;}
+    var b = document.forms["form"]["prix"].value;
+  if (b == "") {
+    alert("Total Price must be filled out");
     return false;
   }
+    var o = document.forms["form"]["etat"].value;
+  if (o == "") {
+    alert("State must be filled out");
+    return false;}
+   
 }
