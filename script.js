@@ -1,22 +1,39 @@
 function validateForm() {
-  var x = document.forms["form"]["ref"].value;
+  var x = document.forms["form"]["cin"].value;
   if (x == "") {
     alert("Reference must be filled out");
     return false;
   }
-  var y = document.forms["form"]["title"].value;
+  var y = document.forms["form"]["nom"].value;
   if (y == "") {
-    alert("Title must be filled out");
+    alert("First Name must be filled out");
     return false;
   }
-  var z = document.forms["form"]["price"].value;
+  var z = document.forms["form"]["prenom"].value;
   if (z == "") {
-    alert("Price must be filled out");
+    alert("Last Name must be filled out");
     return false;
   }
-  var w = document.forms["form"]["qt"].value;
-  if (w == "") {
-    alert("Quantity must be filled out");
+  
+  var v = document.forms["form"]["mail"].value;
+  if (v == "") {
+    alert("Mail must be filled out");
+    return false;
+  }
+  var u = document.forms["form"]["adresse"].value;
+  if (u == "") {
+    alert("Adress must be filled out");
+    return false;
+  }
+  var m = document.forms["form"]["num"].value;
+  if (m == "") {
+    alert("Number must be filled out");
+    return false;
+  }
+  
+  var n = document.forms["form"]["mot_dp"].value;
+  if (n == "") {
+    alert("Password must be filled out");
     return false;
   }
 }
